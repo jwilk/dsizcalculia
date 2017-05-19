@@ -1,0 +1,45 @@
+.. code:: console
+
+   $ dsizcalculia --help
+   usage: dsizcalculia [-h] <x-res> <y-res> <diam>
+
+   positional arguments:
+     <x-res>     width in pixels
+     <y-res>     height in pixel
+     <diam>      diameter in inches
+
+   optional arguments:
+     -h, --help  show this help message and exit
+
+   $ dsizcalculia 1280 1024 15
+   virtual size:
+   - width:     1280 px
+   - height:    1024 px
+   - diameter:  1639 px
+   - area:      1.31 Mpx
+
+   physical size:
+   - width:      298 mm
+   - height:     238 mm
+   - diameter:   381 mm
+   - area:       708 cm²
+
+   physical size of one pixel:
+   - width:     0.23 mm
+   - height:    0.23 mm
+   - diameter:  0.23 mm
+   - area:     0.054 mm²
+
+   4:3 movie size:
+   - width:      298 mm
+   - height:     223 mm
+   - diameter:   372 mm
+   - area:       664 cm²
+
+   16:9 movie size:
+   - width:      298 mm
+   - height:     167 mm
+   - diameter:   341 mm
+   - area:       498 cm²
+
+.. vim:ft=rst ts=3 sts=3 sw=3 et
