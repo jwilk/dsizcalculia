@@ -1,12 +1,12 @@
 .. code:: console
 
    $ dsizcalculia --help
-   usage: dsizcalculia [-h] <x-res> <y-res> <diam>
+   usage: dsizcalculia [-h] XRES YRES DIAM
 
    positional arguments:
-     <x-res>     width in pixels
-     <y-res>     height in pixel
-     <diam>      diameter in inches
+     XRES        width in pixels
+     YRES        height in pixel
+     DIAM        diameter in inches
 
    optional arguments:
      -h, --help  show this help message and exit

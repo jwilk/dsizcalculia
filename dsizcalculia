@@ -16,9 +16,9 @@ def printf(s, *args, **kwargs):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('x_px', metavar='<x-res>', help='width in pixels')
-    ap.add_argument('y_px', metavar='<y-res>', help='height in pixel')
-    ap.add_argument('d_in', metavar='<diam>', help='diameter in inches')
+    ap.add_argument('x_px', metavar='XRES', help='width in pixels')
+    ap.add_argument('y_px', metavar='YRES', help='height in pixel')
+    ap.add_argument('d_in', metavar='DIAM', help='diameter in inches')
     options = ap.parse_args()
     # virtual size:
     x_px = int(options.x_px)
