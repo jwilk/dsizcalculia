@@ -8,8 +8,11 @@ python:
 - "3.5"
 - "3.6"
 - "3.7-dev"
-install: []
+install:
+- pip install pydiatra pyflakes
 script:
 - ./dsizcalculia 1280 1024 15
+- python3 -m pydiatra .
+- python3 -m pyflakes .
 
 # vim:ts=2 sts=2 sw=2 et
