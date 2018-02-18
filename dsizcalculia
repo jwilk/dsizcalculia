@@ -16,13 +16,13 @@ def printf(s, *args, **kwargs):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('x_px', metavar='XRES', help='width in pixels')
-    ap.add_argument('y_px', metavar='YRES', help='height in pixel')
-    ap.add_argument('d_in', metavar='DIAM', help='diameter in inches')
+    ap.add_argument('x_px', metavar='XRES', type=int, help='width in pixels')
+    ap.add_argument('y_px', metavar='YRES', type=int, help='height in pixel')
+    ap.add_argument('d_in', metavar='DIAM', type=int, help='diameter in inches')
     options = ap.parse_args()
     # virtual size:
-    x_px = int(options.x_px)
-    y_px = int(options.y_px)
+    x_px = options.x_px
+    y_px = options.y_px
     a_px = x_px * y_px
     d_px = math.hypot(x_px, y_px)
     print('virtual size:')
@@ -30,7 +30,7 @@ def main():
     printf('- height:   {:5.0f} px', y_px)
     printf('- diameter: {:5.0f} px', d_px)
     printf('- area:     {:5.2f} Mpx', a_px / 1E6)
-    d_mm = int(options.d_in) * in_to_mm
+    d_mm = options.d_in * in_to_mm
     print()
     # physical size:
     print('physical size:')
