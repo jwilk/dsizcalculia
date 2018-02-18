@@ -18,7 +18,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('x_px', metavar='XRES', type=int, help='width in pixels')
     ap.add_argument('y_px', metavar='YRES', type=int, help='height in pixel')
-    ap.add_argument('d_in', metavar='DIAM', type=int, help='diameter in inches')
+    ap.add_argument('d_in', metavar='DIAM', type=float, help='diameter in inches')
     options = ap.parse_args()
     # virtual size:
     x_px = options.x_px
