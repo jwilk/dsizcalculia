@@ -5,7 +5,7 @@
 
    positional arguments:
      XRES        width in pixels
-     YRES        height in pixel
+     YRES        height in pixels
      DIAM        diameter in inches
 
    optional arguments:
