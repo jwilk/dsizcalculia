@@ -46,7 +46,6 @@ def main():
     print('physical size of one pixel:')
     printf('- width:    {:5.2f} mm', x_mm / x_px)
     printf('- height:   {:5.2f} mm', y_mm / y_px)
-    printf('- diameter: {:5.2f} mm', d_mm / d_px)
     printf('- area:     {:4.3f} mm²', a_mm / a_px)
     print()
     # physical movie size:
