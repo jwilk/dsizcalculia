@@ -6,6 +6,7 @@
 
 import argparse
 import math
+import sys
 
 ...  # Python 3 is required
 
@@ -16,6 +17,9 @@ def printf(s, *args, **kwargs):
 
 def main():
     ap = argparse.ArgumentParser()
+    if sys.version_info < (3, 10):
+        # https://bugs.python.org/issue9694
+        ap._optionals.title = 'options'
     ap.add_argument('x_px', metavar='XRES', type=int, help='width in pixels')
     ap.add_argument('y_px', metavar='YRES', type=int, help='height in pixels')
     ap.add_argument('d_in', metavar='DIAM', type=float, help='diameter in inches')
