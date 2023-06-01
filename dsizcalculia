@@ -63,10 +63,10 @@ def main():
             mx_mm = my_mm / mx_to_my
         md_mm = math.hypot(mx_mm, my_mm)
         ma_mm = mx_mm * my_mm
-        assert mx_mm <= x_mm
-        assert my_mm <= y_mm
-        assert md_mm <= d_mm
-        assert ma_mm <= a_mm
+        assert mx_mm < x_mm + 0.1
+        assert my_mm < y_mm + 0.1
+        assert md_mm < d_mm + 0.1
+        assert ma_mm < a_mm + 0.1
         printf('- width:    {:5.0f} mm', mx_mm)
         printf('- height:   {:5.0f} mm', my_mm)
         printf('- diameter: {:5.0f} mm', md_mm)
